@@ -1,0 +1,107 @@
+/* == Body styles == */
+/*
+  1. Tilføj forgrunds- og baggrundsfarve
+  2. Tilføj en transition på 1s
+*/
+body {
+  background: rgb(34, 133, 246);
+  color: hsl(0, 0%, 100%);
+  transition: 1s;
+}
+
+
+/*
+  1. Byt rundt på forgrunds- og baggrundsfarve på klassen .dark
+*/
+body.dark {
+  background: rgb(47, 9, 112);
+  color: hsl(129, 91%, 17%);
+  transition: 1s;
+
+}
+
+/* Header / Banner styles */
+/*
+  1. Få <h1> og <button> til at stå ved siden af hinanden og brug justify-content til at skubbe dem væk fra hinanden
+  2. Tilføj forgrunds- og baggrundsfarve
+  3. Tilføj en transition på 1s
+*/
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgb(33, 125, 231);
+  color: hsl(0, 0%, 100%);
+  transition: 1s;
+  border-bottom: 2px solid hsl(0, 0%, 100%);
+}
+#logo{
+  width: 2em;
+}
+/*
+  1. Ændr evt. baggrundsfarve på banner, når body har klassen .dark
+  -> .dark .banner { ... }
+*/
+.dark .banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgb(47, 9, 112);
+  color: hsl(129, 91%, 17%);
+  transition: 1s;
+}
+h2 {
+  padding-top: 3em;
+  text-align: center;
+}
+/* Article styles */
+/*
+  1. Lav et 2-kolonne grid vha. grid-template-columns
+  2. Tilføj evt. gap
+*/
+.article {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+
+}
+/*behind the  scenes article attr.*/
+article {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 10px;
+
+}
+/* Figure styles */
+/*
+  1. Ændr rækkefølgen, så <figure> står først vha. order
+  -> order: -1;
+*/
+figure {
+  order: -1;
+}
+
+/* Button styles */
+.mode {
+  background: rgb(33, 125, 231);
+  transition: 1s;
+  border: 2px solid hsl(0, 0%, 100%);
+}
+
+.mode:hover {
+  background: hsl(255, 75%, 25%);
+}
+
+/*
+  1. Ændr evt. baggrundsfarve, når body har klassen .dark
+  -> .dark .banner { ... }
+  2. Tilføj evt. en hover-effekt
+  -> .dark .mode:hover { ... }
+*/
+.dark .mode:hover {
+  background: rgb(33, 125, 231);
+}
+
+.dark .mode {
+  background: hsl(255, 75%, 25%);
+}
