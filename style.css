@@ -17,9 +17,18 @@ body.dark {
   background: rgb(97, 51, 176);
   color: hsl(129, 91%, 17%);
   transition: 1s;
-
 }
 
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+#section1 {
+  padding-top: none;
+
+}
 /* Header / Banner styles */
 /*
   1. Få <h1> og <button> til at stå ved siden af hinanden og brug justify-content til at skubbe dem væk fra hinanden
