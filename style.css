@@ -79,6 +79,9 @@ h2 {
 .small_container {
   width: 85%;
 }
+#portrait {
+  width: 100%;
+}
 /*behind the  scenes article attr.*/
 article {
   display: grid;
