@@ -4,7 +4,7 @@
   2. Tilføj en transition på 1s
 */
 body {
-  background: rgb(34, 133, 246);
+  background: rgba(227, 192, 110, 0.868);
   color: hsl(0, 0%, 100%);
   transition: 1s;
 }
@@ -14,7 +14,7 @@ body {
   1. Byt rundt på forgrunds- og baggrundsfarve på klassen .dark
 */
 body.dark {
-  background: rgb(47, 9, 112);
+  background: rgb(97, 51, 176);
   color: hsl(129, 91%, 17%);
   transition: 1s;
 
@@ -30,7 +30,7 @@ body.dark {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: rgb(33, 125, 231);
+  background: rgba(109, 231, 33, 0.761);
   color: hsl(0, 0%, 100%);
   transition: 1s;
   border-bottom: 2px solid hsl(0, 0%, 100%);
@@ -51,10 +51,10 @@ body.dark {
   transition: 1s;
 }
 h2 {
-  padding-top: 3em;
+  padding-top: 2em;
   text-align: center;
 }
-/* Article styles */
+/* Article styles og billede formatting*/
 /*
   1. Lav et 2-kolonne grid vha. grid-template-columns
   2. Tilføj evt. gap
@@ -64,6 +64,20 @@ h2 {
   grid-template-columns: 1fr;
   gap: 10px;
 
+}
+
+.heightformat {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.big_container {
+  width: 100%;
+}
+
+.small_container {
+  width: 85%;
 }
 /*behind the  scenes article attr.*/
 article {
@@ -104,4 +118,7 @@ figure {
 
 .dark .mode {
   background: hsl(255, 75%, 25%);
+}
+img {
+  max-width: 100%;
 }
