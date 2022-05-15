@@ -22,8 +22,8 @@ h2 {
   1. Byt rundt på forgrunds- og baggrundsfarve på klassen .dark
 */
 body.dark {
-  background: rgb(97, 51, 176);
-  color: hsl(129, 91%, 17%);
+  background: rgb(86, 53, 145);
+    color: rgb(242, 246, 10);
   transition: 1s;
 }
 
@@ -47,13 +47,14 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: rgba(109, 231, 33, 0.761);
-  color: hsl(0, 0%, 100%);
+  /* background: rgba(40, 90, 9, 0.761); */
+    /* background: rgb(86, 53, 145); */
   transition: 1s;
-  border-bottom: 2px solid hsl(0, 0%, 100%);
+  position: sticky;
+    top: 10px;
 }
 #logo{
-  width: 2em;
+  width: 3.5em;
 }
 /*
   1. Ændr evt. baggrundsfarve på banner, når body har klassen .dark
@@ -63,13 +64,29 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: rgb(47, 9, 112);
-  color: hsl(129, 91%, 17%);
+  
   transition: 1s;
+
 }
 h2 {
   padding-top: 2em;
   text-align: center;
+}
+section header h2 {
+  text-decoration: 5px solid underline rgb(253,
+      192,
+      0);
+  /* text-decoration: 5px solid underline rgb(245,
+      215,
+      208); */
+  padding-top: 0.1em;
+}
+
+.dark section header h2 {
+  text-decoration: 5px solid underline rgb(245,
+      215,
+      208);
+  padding-top: 0.1em;
 }
 /* Article styles og billede formatting*/
 /*
@@ -116,14 +133,17 @@ figure {
 }
 
 /* Button styles */
+
 .mode {
-  background: rgb(33, 125, 231);
+  background: hsl(255, 66%, 65%);
+    color: hsl(0, 0%, 100%);
   transition: 1s;
   border: 2px solid hsl(0, 0%, 100%);
 }
 
 .mode:hover {
-  background: hsl(255, 75%, 25%);
+  background: hsl(255, 77%, 25%);
+    color: rgb(242, 246, 10);
 }
 
 /*
@@ -133,11 +153,12 @@ figure {
   -> .dark .mode:hover { ... }
 */
 .dark .mode:hover {
-  background: rgb(33, 125, 231);
+  background: rgba(227, 192, 110, 0.868);
+    color: hsl(0, 0%, 100%);
 }
 
 .dark .mode {
-  background: hsl(255, 75%, 25%);
+  background: hsl(50, 83%, 64%);
 }
 img {
   max-width: 100%;
