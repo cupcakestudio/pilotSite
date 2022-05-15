@@ -76,9 +76,6 @@ section header h2 {
   text-decoration: 5px solid underline rgb(253,
       192,
       0);
-  /* text-decoration: 5px solid underline rgb(245,
-      215,
-      208); */
   padding-top: 0.1em;
 }
 
@@ -136,7 +133,7 @@ figure {
 
 .mode {
   background: hsl(255, 66%, 65%);
-    color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   transition: 1s;
   border: 2px solid hsl(0, 0%, 100%);
 }
