@@ -8,8 +8,16 @@ body {
   color: hsl(0, 0%, 100%);
   transition: 1s;
 }
+p,
+figcaption {
+  font-family: 'Baskervville',
+    serif;
+}
 
-
+h2 {
+  font-family: 'Bebas Neue',
+    cursive;
+}
 /*
   1. Byt rundt på forgrunds- og baggrundsfarve på klassen .dark
 */
