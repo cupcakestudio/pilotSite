@@ -29,7 +29,7 @@ body.dark {
 
 section {
   display: grid;
-  grid-template-columns: 1fr;
+  place-content: center;
   padding-left: 6em;
   padding-right: 6em;
 }
