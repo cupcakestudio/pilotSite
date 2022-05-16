@@ -30,12 +30,12 @@ body.dark {
 section {
   display: grid;
   place-content: center;
-  padding-left: 3em;
-    padding-right: 3em;
+  padding-left: 6em;
+    padding-right: 6em;
 }
 #section1 {
   display: flex;
-    flex-flow: wrap;
+  flex-flow: wrap;
   padding-top: none;
 
 }
@@ -66,9 +66,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
   transition: 1s;
-
 }
 h2 {
   
@@ -78,7 +76,6 @@ h2 {
 
 .bg-img {
   background-image: url(images/billeder_til_site/titel_background.jpg);
-
 }
 
 .bg-img:hover {
@@ -140,7 +137,7 @@ article {
   display: grid;
   grid-template-columns: 2fr 2fr;
   gap: 10px;
-
+  
 }
 /* Figure styles */
 /*
@@ -182,10 +179,12 @@ figure {
 img {
   max-width: 100%;
 }
+/*video styles*/
 video {
   width: 100%;
   height: auto;
   display: block;
+  border: 10px 5px;
 }
 
 iframe {

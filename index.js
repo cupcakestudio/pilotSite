@@ -9,7 +9,7 @@ let modeVar = document.querySelector(".mode");
 // a) toggle'r klassen "dark" vha. classList og
 // b) ændrer teksten på toggle-knappen til hhv. "Dark mode" eller "Light mode" vha. en if/else-sætning
 function darkMode(){
-;
+
 bodyVar.classList.toggle("dark");
 if (modeVar.classList.toggle("dark")){
   modeVar.textContent = "Light Mode";
