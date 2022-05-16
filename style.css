@@ -74,6 +74,16 @@ h2 {
   
   text-align: center;
 }
+/*background picture/img*/
+
+.bg-img {
+  background-image: url(images/billeder_til_site/titel_background.jpg);
+
+}
+
+.bg-img:hover {
+  filter: blur(8px);
+}
 section header h2 {
   text-decoration: 5px solid underline rgb(253,
       192,
@@ -172,4 +182,14 @@ figure {
 img {
   max-width: 100%;
 }
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
