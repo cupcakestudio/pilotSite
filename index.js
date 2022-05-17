@@ -18,3 +18,5 @@ else {modeVar.textContent = "Dark Mode";}
 };
 // Lav et klik-event på toggle, der sætter funktionen darkMode i gang
 buttonVar.addEventListener("click", darkMode);
+
+

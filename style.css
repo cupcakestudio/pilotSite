@@ -17,6 +17,7 @@ figcaption {
 h2 {
   font-family: 'Bebas Neue',
     cursive;
+    text-align: center;
 }
 /*
   1. Byt rundt på forgrunds- og baggrundsfarve på klassen .dark
@@ -34,9 +35,9 @@ section {
   padding-right: 6em;
 }
 #section1 {
-  display: flex;
-  flex-flow: wrap;
-  padding-top: none;
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 0em 1em 0em 1em;
 
 }
 /* Header / Banner styles */
@@ -103,7 +104,7 @@ section header h2 {
   
   .widthformat {
     display: grid;
-    grid-template-columns: repeat(auto-fit)minmax(200px, 1fr);
+    grid-template-columns: 1fr;
 
 }
 .widthformat figure {
@@ -136,6 +137,7 @@ article {
 */
 figure {
   order: -1;
+  overflow: scroll;
 }
 
 /* Button styles */
@@ -211,7 +213,7 @@ top: 70%;
   text-align: center;
   text-decoration: 3px solid hsl(50, 83%, 64%) underline;
 }
-    
+
 main {
   max-width: 1200px;
   margin: 0 auto;
