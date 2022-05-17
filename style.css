@@ -31,7 +31,7 @@ section {
   display: grid;
   place-content: center;
   padding-left: 6em;
-    padding-right: 6em;
+  padding-right: 6em;
 }
 #section1 {
   display: flex;
@@ -68,10 +68,7 @@ section {
   justify-content: space-between;
   transition: 1s;
 }
-h2 {
-  
-  text-align: center;
-}
+
 
 section header h2 {
   text-decoration: 5px solid underline rgb(253,
@@ -188,25 +185,20 @@ iframe {
 /*background picture/img*/
 
 .bg_img {
-  background-image: url(images/billeder/titel_background.webp);
-  width: 100%;
-  height: 100%;
+margin: 0 auto;
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 1em;
 }
+
 
 .bg_img:hover {
   filter: blur(3px);
 }
 
 #titel {
+  font-size: 2em;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 30%;
+    left: 40%;
 }
 
 main {
